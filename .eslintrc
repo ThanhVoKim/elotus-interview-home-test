@@ -1,0 +1,68 @@
+{
+	"root": true,
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:import/recommended",
+		"plugin:react/jsx-runtime",
+		"plugin:import/typescript",
+		"plugin:prettier/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": ["./tsconfig.json"],
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"plugins": [
+		"@typescript-eslint",
+		"react",
+		"react-hooks",
+		"import",
+		"prettier"
+	],
+	"settings": {
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts", ".tsx"]
+		},
+		"import/resolver": {
+			"typescript": {
+				"alwaysTryTypes": true // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+			}
+		}
+	},
+	"rules": {
+		"prettier/prettier": [
+			"error",
+			{
+				"endOfLine": "auto",
+				"semi": true,
+				"singleQuote": true,
+				"bracketSpacing": true
+			}
+		],
+		"import/no-unresolved": "error",
+		"react/self-closing-comp": [
+			"error",
+			{
+				"component": true,
+				"html": true
+			}
+		],
+		"react/prop-types": 0
+		// "sort-imports": [
+		// 	"error",
+		// 	{
+		// 		"ignoreCase": false,
+		// 		"ignoreDeclarationSort": false,
+		// 		"ignoreMemberSort": false,
+		// 		"memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+		// 		"allowSeparatedGroups": false
+		// 	}
+		// ]
+	},
+	"ignorePatterns": ["src/**/*.test.ts", "src/frontend/generated/*"]
+}
