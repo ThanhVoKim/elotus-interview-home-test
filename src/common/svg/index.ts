@@ -3,4 +3,6 @@ export { ReactComponent as FillStarIcon } from './FillStar.svg';
 export { ReactComponent as NavigateNextIcon } from './NavigateNext.svg';
 export { ReactComponent as NavigateBeforeIcon } from './NavigateBefore.svg';
 export { ReactComponent as SearchIcon } from './Search.svg';
+export { ReactComponent as GridViewIcon } from './GridView.svg';
+export { ReactComponent as ViewListIcon } from './ViewList.svg';
 export { ReactComponent as ImageSkeleton } from './ImageSkeleton.svg';

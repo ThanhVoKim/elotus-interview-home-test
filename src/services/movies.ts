@@ -1,4 +1,3 @@
-import { AxiosError } from 'axios';
 import { IMovie, IMovieFullDetail, IMovieResponse } from 'common/types';
 import axios from 'common/utils/axios';
 import { toastNotify } from 'common/utils/toastNotify';

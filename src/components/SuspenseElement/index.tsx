@@ -5,11 +5,7 @@ interface ISuspenseElementProps {
 	title?: string;
 }
 
-const SuspenseElement: React.FC<ISuspenseElementProps> = ({
-	children,
-	title = 'Movies',
-}) => {
-	document.title = title;
+const SuspenseElement: React.FC<ISuspenseElementProps> = ({ children }) => {
 	return <Suspense fallback={<div>loading...</div>}>{children}</Suspense>;
 };
 

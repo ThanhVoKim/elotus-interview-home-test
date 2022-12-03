@@ -24,7 +24,9 @@ module.exports = {
 					dark: '#002fc8',
 				},
 			},
-			width: {},
+			width: {
+				posterGrid: '200px',
+			},
 			minWidth: {},
 			minHeight: {},
 			maxHeight: {},

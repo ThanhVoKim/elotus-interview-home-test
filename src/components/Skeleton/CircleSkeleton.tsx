@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CircleSkeleton = ({ className = '' }) => {
 	return (
 		<div

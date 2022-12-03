@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Link, Outlet, useNavigate, useSearchParams } from 'react-router-dom';
 import { SearchIcon } from 'common/svg';
+import ScrollToTop from 'components/ScrollToTop';
 
 const MainLayout: React.FC = () => {
 	const [searchParams] = useSearchParams();
@@ -44,6 +45,7 @@ const MainLayout: React.FC = () => {
 			</header>
 			<main className="">
 				<Outlet />
+				<ScrollToTop />
 			</main>
 		</>
 	);

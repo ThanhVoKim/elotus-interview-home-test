@@ -1,15 +1,14 @@
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import { IMG_URL } from 'common/constants/api';
 import { FillStarIcon } from 'common/svg';
 import { ICast, IMovieDetails } from 'common/types';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { currencyFormat, minutesToHoursString } from 'common/utils/string';
 import CircleSkeleton from 'components/Skeleton/CircleSkeleton';
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { getMovieFullDetail } from 'services/movies';
 import BackdropSkeleton from 'components/Skeleton/BackdropSkeleton';
-
-// interface IDetailsProps {}
 
 const Details: React.FC = () => {
 	const [movieDetails, setMovieDetails] = useState<IMovieDetails>();

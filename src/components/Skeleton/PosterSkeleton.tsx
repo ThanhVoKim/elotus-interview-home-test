@@ -1,6 +1,6 @@
 import { ImageSkeleton } from 'common/svg';
 
-const PosterSkeleton = ({ animate = true }) => {
+const PosterSkeleton = () => {
 	return (
 		<div
 			className={

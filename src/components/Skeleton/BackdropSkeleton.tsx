@@ -1,4 +1,3 @@
-import React from 'react';
 import PosterSkeleton from './PosterSkeleton';
 
 const BackdropSkeleton = () => {
@@ -7,7 +6,7 @@ const BackdropSkeleton = () => {
 			<div className="bg-gradient-to-br from-transparent to-black/70 h-full absolute inset-0 z-[0] pointer-events-none " />
 			<div className="absolute inset-0 -z-[1] bg-slate-200 dark:bg-slate-700" />
 			<div className="flex flex-col md:flex-row md:items-center gap-[40px] container max-h-full relative z-10">
-				<div className="w-[300px] flex-none">
+				<div className="w-[300pxflex-none">
 					<PosterSkeleton />
 				</div>
 				<div className="flex-auto space-y-6 text-white">
